@@ -20,8 +20,16 @@ def full_name(first_name, last_name, title)
   return name
 end
 
+# Fix Broken Code
 
-# Methods
+def full_name(f, l)
+  puts f + l
+end
+
+puts full_nam("bubba", "chuck")
+
+
+# Coding
 
 
 ## Enter your code for your 'add' method below
