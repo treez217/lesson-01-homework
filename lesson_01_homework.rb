@@ -30,26 +30,39 @@ end
 
 # Fix Broken Code
 
-def full_name(f, l)
-  puts f + l
+#spelled out first name and last name by making it more descriptive.  Also added a + space
+def full_name(first_name, last_name)
+  puts first_name + " " + last_name
 end
 
 #there was an error with the spelling of name.  i changed it from full_nam to full_name
-puts full_name("bubba", "chuck")
+puts full_name("bubba","chuck")
 
 
 # Coding
 
-
 ## Enter your code for your 'add' method below
-
-
+def add(number_1, number_2)
+  number_1 + number_2
+end
+#is this storing it in a variable?
+puts add(100, 10000)
 
 
 ## Enter the code for you 'join_strings' method below
+def join_strings(text_1, text_2)
+  text_1 + " " + text_2
+end
 
-
-
-
+puts join_strings("hello", "dolly")
 
 ## Enter your 'old_enough_to_vote?' method below
+def old_enough_to_vote?(age)
+  if age >= 18
+    "Yes"
+  else
+    "No" 
+  end  
+end
+
+puts old_enough_to_vote?(16)
