@@ -30,9 +30,9 @@ end
 
 # Fix Broken Code
 
-#spelled out first name and last name by making it more descriptive.  Also added a + space
+#spelled out first name and last name by making it more descriptive.  Also added a + space.  Also removed 'puts' from body of code.
 def full_name(first_name, last_name)
-  puts first_name + " " + last_name
+  first_name + " " + last_name
 end
 
 #there was an error with the spelling of name.  i changed it from full_nam to full_name
@@ -57,12 +57,13 @@ end
 puts join_strings("hello", "dolly")
 
 ## Enter your 'old_enough_to_vote?' method below
-def old_enough_to_vote?(age)
-  if age >= 18
-    "Yes"
+def old_enough_to_vote?(year)
+  if year > 1997
+    "No, not old enough to vote, get lost" 
   else
-    "No" 
+    "Yes, VOTE!!"  
   end  
 end
 
-puts old_enough_to_vote?(16)
+puts old_enough_to_vote?(1983)
+
